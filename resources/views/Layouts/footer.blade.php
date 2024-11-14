@@ -12,7 +12,7 @@
                 <div class="col-xl-9 col-lg-9 col-md-9 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget__column footer-widget__contact-box">
                         <div class="footer__logo">
-                            <a href="/"><img src="assets/images/logo/scentsation-logo-1.jpg" alt=""></a>
+                            <a href="/"><img src="assets/images/logo/scentsation-logo-2.jpg" alt=""></a>
                         </div>
                         <div class="footer-widget__contact">
                             <a href="mailto:info@scentsationglobal.com">info@scentsationglobal.com</a>

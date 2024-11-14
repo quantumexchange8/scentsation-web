@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Home Three || mellis || mellis HTML 5 Template </title>
+    <title>Scentsation | @yield('title') </title>
+
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -55,7 +56,7 @@
     <!-- /.preloader -->
 
     <div class="page-wrapper">
-        @include('Layouts.home-topbar')
+        @include('Layouts.topbar')
 
         @yield('contents')
 
@@ -70,7 +71,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-3.png" width="90"
+                <a href="/" aria-label="logo image"><img src="assets/images/logo/scentsation-logo-1.jpg" width="90"
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
@@ -80,19 +81,19 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@mellis.com</a>
+                    <a href="mailto:info@scentsationglobal.com"> info@scentsationglobal.com</a>
                 </li>
-                <li>
+                {{-- <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
-                </li>
+                    <a href="tel:666-888-xxxx">666 888 xxx</a>
+                </li> --}}
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-pinterest-p"></a>
                     <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    
                 </div><!-- /.mobile-nav__social -->
             </div><!-- /.mobile-nav__top -->
 

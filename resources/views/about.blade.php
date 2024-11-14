@@ -1,23 +1,7 @@
 @extends('Layouts.master')
+@section('title', 'About Us')
 
 @section('contents')
-    {{-- <!--Page Header Start-->
-    <section class="page-header">
-        <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
-        </div>
-        <div class="container">
-            <div class="page-header__inner">
-                <ul class="thm-breadcrumb list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><span>/</span></li>
-                    <li>About Us</li>
-                </ul>
-                <h2>Our Story</h2>
-            </div>
-        </div>
-    </section>
-    <!--Page Header End--> --}}
-
     <!--Main Slider Start-->
     <section class="main-slider-three">
         <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
@@ -37,7 +21,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="image-layer-three"
-                        style="background-image: url(assets/images/backgrounds/main-slider-3-1.jpg);"></div>
+                        style="background-image: url(assets/images/logo/scentsation2.jpg);"></div>
                     <!-- /.image-layer -->
                     <div class="container">
                         <div class="row">
@@ -65,7 +49,7 @@
                         <div class="welcome-one__img-box wow slideInLeft" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="welcome-one__img">
-                                <img src="assets/images/resources/welcome-one-img-1.jpg" alt="">
+                                <img src="assets/images/logo/scentsation-logo.jpg" alt="">
                                 <div class="welcome-one__shape-1 float-bob-y">
                                     <img src="assets/images/shapes/welcome-one-shape-1.png" alt="">
                                 </div>
@@ -123,7 +107,7 @@
     <!--Core Values Start-->
     <section class="spa-center-two">
         <div class="spa-center-two__bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-            style="background-image: url(assets/images/backgrounds/spa-center-two-bg.jpg);"></div>
+            style="background-image: url(assets/images/logo/scentsation3.jpg);"></div>
         <div class="container">
             <div class="spa-center-two__inner">
                 <div class="spa-center-two__title-box">
@@ -176,88 +160,49 @@
     </section>
     <!--Three Points End-->
     <!--Core Values End-->
-            <!--Contact One Start-->
-            <section class="contact-one">
-                <div class="contact-one__shape-1 float-bob-x">
-                    <img src="assets/images/shapes/contact-one-shape-1.png" alt="">
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-7">
-                            <div class="contact-one__left">
-                                <div class="section-title text-left">
-                                    <span class="section-title__tagline">Contact us</span>
-                                    <h2 class="section-title__title">Send a Message or Book
-                                        Our Services</h2>
-                                </div>
-                                <p class="contact-one__text">Lorem ipsum dolor sit amet, conse ctetur adipisicing elit sed
-                                    do eiusm od tempor ut labore. sit simply free text amet scelerisque eros. Phasellus
-                                    hendrerit neque a augue.</p>
-                                <div class="contact-one__img-and-counter">
-                                    <div class="contact-one__img">
-                                        <img src="assets/images/resources/contact-one-img.jpg" alt="">
-                                    </div>
-                                    <ul class="contact-one__counter list-unstyled">
-                                        <li>
-                                            <div class="contact-one__count-box">
-                                                <h3 class="odometer" data-count="8963">00</h3>
-                                            </div>
-                                            <p class="contact-one__count-text">Massages & Therapies</p>
-                                        </li>
-                                        <li>
-                                            <div class="contact-one__count-box">
-                                                <h3 class="odometer" data-count="326">00</h3>
-                                            </div>
-                                            <p class="contact-one__count-text">Happy Repeat Clients</p>
-                                        </li>
-                                    </ul>
-                                </div>
+
+    <!--Pricing Plans Start-->
+    <section class="pricing-plan">
+        <div class="container">
+            <div class="section-title text-center">
+                {{-- <span class="section-title__tagline">Our Plans</span> --}}
+                <h2 class="section-title__title">Fragrance Collection
+                </h2>
+            </div>
+            <div class="row">
+                <!--Pricing Plan Single Start-->
+                <div class="col-xl-6 col-lg-6">
+                    <div class="pricing-plan__single">
+                        <div class="pricing-plan__top">
+                            <h3 class="pricing-plan__title">Exclusive Scents
+                                <br> </h3>
+                            <div class="pricing-plan__icon">
+                                <span class="icon-spa-candles"></span>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-5">
-                            <div class="contact-one__right">
-                                <div class="contact-one__content">
-                                    <form action="assets/inc/sendemail.php" class="contact-one__form contact-form-validated"
-                                        novalidate="novalidate">
-                                        <div class="row">
-                                            <div class="col-xl-12">
-                                                <div class="contact-one__form-input-box">
-                                                    <input type="text" placeholder="Your Name" name="name">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-12">
-                                                <div class="contact-one__form-input-box">
-                                                    <input type="email" placeholder="Email Address" name="email">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="contact-one__form-input-box">
-                                                    <input type="text" placeholder="Phone" name="Phone">
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="contact-one__form-input-box">
-                                                    <input type="text" placeholder="Select Service" name="Select Service">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="contact-one__form-input-box text-message-box">
-                                                <textarea name="message" placeholder="Write Message"></textarea>
-                                            </div>
-                                            <div class="contact-one__btn-box">
-                                                <button type="submit" class="thm-btn contact-one__btn">Send a
-                                                    message</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="result"></div>
-                                </div>
-                            </div>
+                        <div class="pricing-plan__bottom">
+                            <p class="pricing-plan__per-day">Our curated selection includes bestsellers and exclusive collaborations from the world’s top fragrance houses. Choose from categories like Fresh, Floral, Woodsy, and Oriental to match your mood or style.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--Contact One End-->
-
+                <!--Pricing Plan Single End-->
+                <!--Pricing Plan Single Start-->
+                <div class="col-xl-6 col-lg-6">
+                    <div class="pricing-plan__single">
+                        <div class="pricing-plan__top">
+                            <h3 class="pricing-plan__title">Eco-Friendly Refill</h3>
+                            <div class="pricing-plan__icon">
+                                <span class="icon-flower"></span>
+                            </div>
+                        </div>
+                        <div class="pricing-plan__bottom">
+                            <p class="pricing-plan__per-day">We are dedicated to reducing waste. All ScentsationGlobal fragrances come in recyclable containers, and our refill practices are designed to minimize environmental impact.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Pricing Plan Single End-->
+            </div>
+        </div>
+    </section>
+    <!--Pricing Plans End-->
 @endsection

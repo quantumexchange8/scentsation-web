@@ -24,7 +24,7 @@
   --mellis-white: #ffffff;
   --mellis-white-rgb: 255, 255, 255;
   --mellis-base: #cabe7a;
-  --mellis-base-rgb: 222, 150, 141;
+  --mellis-base-rgb: 205, 190, 165 ;
   --mellis-black: #27252a;
   --mellis-black-rgb: 39, 37, 42;
   --mellis-extra: #f8f6ef;
@@ -2370,6 +2370,9 @@ ul {
   transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
   transition: transform 2000ms ease, opacity 2000ms ease;
   transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .main-slider-three__btn-box {
@@ -2386,7 +2389,14 @@ ul {
   transition: transform 2000ms ease, opacity 2000ms ease;
   transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
 }
-
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ebac19, 0 0 40px #ebac19, 0 0 50px #ebac19, 0 0 60px #ebac19, 0 0 70px #ebac19;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #e2b52e, 0 0 40px #e2b52e, 0 0 50px #e2b52e, 0 0 60px #e2b52e, 0 0 70px #e2b52e, 0 0 80px #e2b52e;
+  }
+}
 .main-slider-three__btn:hover {
   color: var(--mellis-base);
 }
@@ -6547,7 +6557,13 @@ ul {
   display: block;
   overflow: hidden;
   z-index: 1;
+  max-width: 384px;      /* Maximum width */
+  max-height: 364px;     /* Maximum height */
+  width: 100%;           /* Allow the width to be flexible up to the max */
+  height: auto;          /* Adjust height automatically based on the width */
+  object-fit: contain;   /* Ensures the image fits within the container without cropping */
 }
+
 
 .instagram-two__img:before {
   position: absolute;
@@ -9260,6 +9276,18 @@ ul {
   text-align: left;
   margin-top: 30px;
 }
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
 /*--------------------------------------------------------------
 # Boxed Version
 --------------------------------------------------------------*/

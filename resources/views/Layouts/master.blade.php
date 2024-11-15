@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
     <link rel="stylesheet" href="assets/vendors/twenty-twenty/twentytwenty.css" />
-
+    {{-- <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css" /> --}}
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/mellis.css" />
     <link rel="stylesheet" href="assets/css/mellis-responsive.css" />
@@ -50,9 +50,9 @@
 
 <body>
 
-    <div class="preloader">
+    {{-- <div class="preloader">
         <div class="preloader__image"></div>
-    </div>
+    </div> --}}
     <!-- /.preloader -->
 
     <div class="page-wrapper">
@@ -96,9 +96,6 @@
                     
                 </div><!-- /.mobile-nav__social -->
             </div><!-- /.mobile-nav__top -->
-
-
-
         </div>
         <!-- /.mobile-nav__content -->
     </div>
@@ -148,8 +145,9 @@
     <script src="assets/vendors/sidebar-content/jquery-sidebar-content.js"></script>
     <script src="assets/vendors/twenty-twenty/twentytwenty.js"></script>
     <script src="assets/vendors/twenty-twenty/jquery.event.move.js"></script>
-
+    {{-- <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script> --}}
+    @yield('scripts')
     <!-- template js -->
-    <script src="assets/js//mellis.js"></script>
+    <script src="assets/js/mellis.js"></script>
 </body>
 </html>

@@ -7327,28 +7327,63 @@ $.widget( "ui.autocomplete", {
 		return element;
 	},
 
+	// _initSource: function() {
+	// 	var array, url,
+	// 		that = this;
+	// 	if ( $.isArray( this.options.source ) ) {
+	// 		array = this.options.source;
+	// 		this.source = function( request, response ) {
+	// 			response( $.ui.autocomplete.filter( array, request.term ) );
+	// 		};
+	// 	} else if ( typeof this.options.source === "string" ) {
+	// 		url = this.options.source;
+	// 		this.source = function( request, response ) {
+	// 			if ( that.xhr ) {
+	// 				that.xhr.abort();
+	// 			}
+	// 			that.xhr = $.ajax({
+	// 				url: url,
+	// 				data: request,
+	// 				dataType: "json",
+	// 				success: function( data ) {
+	// 					response( data );
+	// 				},
+	// 				error: function() {
+	// 					response([]);
+	// 				}
+	// 			});
+	// 		};
+	// 	} else {
+	// 		this.source = this.options.source;
+	// 	}
+	// },
+
 	_initSource: function() {
 		var array, url,
 			that = this;
-		if ( $.isArray( this.options.source ) ) {
+		
+		if ($.isArray(this.options.source)) {
 			array = this.options.source;
-			this.source = function( request, response ) {
-				response( $.ui.autocomplete.filter( array, request.term ) );
+			this.source = function(request, response) {
+				response($.ui.autocomplete.filter(array, request.term));
 			};
-		} else if ( typeof this.options.source === "string" ) {
+		} else if (typeof this.options.source === "string") {
 			url = this.options.source;
-			this.source = function( request, response ) {
-				if ( that.xhr ) {
+			this.source = function(request, response) {
+				if (that.xhr) {
 					that.xhr.abort();
 				}
-				that.xhr = $.ajax({
-					url: url,
-					data: request,
-					dataType: "json",
-					success: function( data ) {
-						response( data );
-					},
-					error: function() {
+				that.xhr = new AbortController();
+				const signal = that.xhr.signal;
+				
+				fetch(url, {
+					method: 'GET', // Adjust method and add request data as needed
+					signal: signal
+				})
+				.then(response => response.json())
+				.then(data => response(data))
+				.catch(error => {
+					if (error.name !== 'AbortError') {
 						response([]);
 					}
 				});
@@ -7357,7 +7392,7 @@ $.widget( "ui.autocomplete", {
 			this.source = this.options.source;
 		}
 	},
-
+	
 	_searchTimeout: function( event ) {
 		clearTimeout( this.searching );
 		this.searching = this._delay(function() {

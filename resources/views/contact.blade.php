@@ -97,7 +97,13 @@
     </section>
     <!--Location Three End--> --}}
 
-    <!--Contact Page Start-->
+    <!-- Display Success Message -->
+    @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <section class="contact-page">
         <div class="container">
             <div class="row">
@@ -118,8 +124,9 @@
                 <div class="col-xl-8 col-lg-7">
                     <div class="contact-page__right">
                         <div class="contact-page__content">
-                            <form action="assets/inc/sendemail.php"
-                                class="contact-page__form contact-form-validated" novalidate="novalidate">
+                            <div class="message-container"></div>
+                            <form action="{{ route('send.email') }}" method="POST" class="contact-page__form contact-form-validated" novalidate="novalidate">
+                                @csrf
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="contact-page__form-input-box">
@@ -135,9 +142,9 @@
                                         <div class="contact-page__form-input-box">
                                             <select name="subject" class="contact-page__form-select">
                                                 <option value="" disabled selected>I am a:</option>
-                                                <option value="venue_owner">Venue Owner</option>
-                                                <option value="fragrance_brand">Fragrance Brand</option>
-                                                <option value="general_inquiry">General Inquiry</option>
+                                                <option value="Venue Owner">Venue Owner</option>
+                                                <option value="Fragrance Brand">Fragrance Brand</option>
+                                                <option value="General Inquiry">General Inquiry</option>
                                             </select>
                                         </div>
                                     </div>
@@ -148,12 +155,11 @@
                                         <textarea name="message" placeholder="Write a Message"></textarea>
                                     </div>
                                     <div class="contact-page__btn-box">
-                                        <button type="submit" class="thm-btn contact-page__btn">Send a
-                                            message</button>
+                                        <button type="submit" class="thm-btn contact-page__btn">Send a message</button>
                                     </div>
                                 </div>
                             </form>
-                            <div class="result"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -227,4 +233,27 @@
     </section>
     <!--Faq End--> --}}
 
+@endsection
+
+@section('scripts')
+<script>
+    $(document).ready(function() {
+        $('.contact-page__form').on('submit', function(e) {
+            e.preventDefault();
+            
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(response) {
+                    // Show success message
+                    $('.message-container').html('<div class="alert alert-success">Your message has been sent successfully!</div>');
+                },
+                error: function() {
+                    alert('There was an error sending your message. Please try again.');
+                }
+            });
+        });
+    });
+</script>
 @endsection

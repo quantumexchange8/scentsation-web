@@ -427,7 +427,7 @@
                     <div class="item">
                         <div class="instagram-two__single">
                             <div class="instagram-two__img">
-                                <img src="assets/images/resources/instagram-2-1.jpg" alt="">
+                                <img src="assets/images/resources/instagram/scentsation1.jpg" alt="">
                                 <div class="instagram-two__img-icon">
                                     <a href="#"><span class="fab fa-instagram"></span></a>
                                 </div>
@@ -439,7 +439,7 @@
                     <div class="item">
                         <div class="instagram-two__single">
                             <div class="instagram-two__img">
-                                <img src="assets/images/resources/instagram-2-2.jpg" alt="">
+                                <img src="assets/images/resources/instagram/scentsation2.jpg" alt="">
                                 <div class="instagram-two__img-icon">
                                     <a href="#"><span class="fab fa-instagram"></span></a>
                                 </div>
@@ -451,7 +451,7 @@
                     <div class="item">
                         <div class="instagram-two__single">
                             <div class="instagram-two__img">
-                                <img src="assets/images/resources/instagram-2-3.jpg" alt="">
+                                <img src="assets/images/resources/instagram/scentsation3.jpg" alt="">
                                 <div class="instagram-two__img-icon">
                                     <a href="#"><span class="fab fa-instagram"></span></a>
                                 </div>
@@ -463,7 +463,7 @@
                     <div class="item">
                         <div class="instagram-two__single">
                             <div class="instagram-two__img">
-                                <img src="assets/images/resources/instagram-2-4.jpg" alt="">
+                                <img src="assets/images/resources/instagram/scentsation-logo.jpg" alt="">
                                 <div class="instagram-two__img-icon">
                                     <a href="#"><span class="fab fa-instagram"></span></a>
                                 </div>
@@ -475,7 +475,7 @@
                     <div class="item">
                         <div class="instagram-two__single">
                             <div class="instagram-two__img">
-                                <img src="assets/images/resources/instagram-2-5.jpg" alt="">
+                                <img src="assets/images/resources/instagram/scentsation-logo-1.jpg" alt="">
                                 <div class="instagram-two__img-icon">
                                     <a href="#"><span class="fab fa-instagram"></span></a>
                                 </div>

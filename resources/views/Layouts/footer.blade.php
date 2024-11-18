@@ -41,7 +41,7 @@
                         <ul class="footer-widget__links-list list-unstyled">
                             <li><a href="/">Home Page</a></li>
                             <li><a href="/about">About</a></li>
-                            <li><a href="/partner">Partner</a></li>
+                            <li><a href="/partner">Partnership</a></li>
                             <li><a href="/contact">Contact</a></li>
                         </ul>
                     </div>

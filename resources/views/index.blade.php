@@ -390,8 +390,8 @@
     <section class="instagram-two">
         <div class="container">
             <div class="section-title text-center">
-                <span class="section-title__tagline">follow on</span>
-                <h2 class="section-title__title">Our Instagram</h2>
+                <span class="section-title__tagline">Products</span>
+                <h2 class="section-title__title">Our Machine</h2>
             </div>
             <div class="instagram-two__bottom">
                 <div class="instagram-two__carousel thm-owl__carousel owl-theme owl-carousel" data-owl-options='{
@@ -408,74 +408,40 @@
                             "items":1
                         },
                         "768":{
-                            "items":3
+                            "items":2
                         },
                         "992":{
-                            "items": 4
+                            "items": 3
                         },
                         "1200":{
-                            "items": 5
+                            "items": 4
                         }
                     }
                 }'>
                     <!--Instagram Single Start-->
                     <div class="item">
-                        <div class="instagram-two__single">
-                            <div class="instagram-two__img">
+                       
                                 <img src="assets/images/resources/instagram/scentsation1.jpg" alt="">
-                                <div class="instagram-two__img-icon">
-                                    <a href="#"><span class="fab fa-instagram"></span></a>
-                                </div>
-                            </div>
-                        </div>
+                                
                     </div>
                     <!--Instagram Single End-->
                     <!--Instagram Single Start-->
                     <div class="item">
-                        <div class="instagram-two__single">
-                            <div class="instagram-two__img">
                                 <img src="assets/images/resources/instagram/scentsation2.jpg" alt="">
-                                <div class="instagram-two__img-icon">
-                                    <a href="#"><span class="fab fa-instagram"></span></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
                     <!--Instagram Single End-->
                     <!--Instagram Single Start-->
                     <div class="item">
-                        <div class="instagram-two__single">
-                            <div class="instagram-two__img">
+                        
                                 <img src="assets/images/resources/instagram/scentsation3.jpg" alt="">
-                                <div class="instagram-two__img-icon">
-                                    <a href="#"><span class="fab fa-instagram"></span></a>
-                                </div>
-                            </div>
-                        </div>
+                                
                     </div>
                     <!--Instagram Single End-->
                     <!--Instagram Single Start-->
                     <div class="item">
-                        <div class="instagram-two__single">
-                            <div class="instagram-two__img">
-                                <img src="assets/images/resources/instagram/scentsation-logo.jpg" alt="">
-                                <div class="instagram-two__img-icon">
-                                    <a href="#"><span class="fab fa-instagram"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Instagram Single End-->
-                    <!--Instagram Single Start-->
-                    <div class="item">
-                        <div class="instagram-two__single">
-                            <div class="instagram-two__img">
-                                <img src="assets/images/resources/instagram/scentsation-logo-1.jpg" alt="">
-                                <div class="instagram-two__img-icon">
-                                    <a href="#"><span class="fab fa-instagram"></span></a>
-                                </div>
-                            </div>
-                        </div>
+                        
+                                <img src="assets/images/resources/instagram/machine1.png" alt="">
+                                
                     </div>
                     <!--Instagram Single End-->
                 </div>

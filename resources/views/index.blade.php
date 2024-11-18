@@ -427,7 +427,7 @@
                     <!--Instagram Single End-->
                     <!--Instagram Single Start-->
                     <div class="item">
-                                <img src="assets/images/resources/instagram/scentsation2.jpg" alt="">
+                                <img src="assets/images/resources/instagram/machine3.png" alt="">
                                 </div>
                     <!--Instagram Single End-->
                     <!--Instagram Single Start-->

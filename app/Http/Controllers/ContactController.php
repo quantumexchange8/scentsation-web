@@ -18,7 +18,7 @@ class ContactController extends Controller
         ]);
 
         // Send email
-        Mail::to('jrjrjrjingru@gmail.com')->send(new SendEmail($request->all()));
+        Mail::to('info@scentsationglobal.com')->send(new SendEmail($request->all()));
 
         return redirect()->back()->with('success', 'Your message has been sent successfully!');
     }

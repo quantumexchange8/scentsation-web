@@ -433,7 +433,7 @@
                     <!--Instagram Single Start-->
                     <div class="item">
                         
-                                <img src="assets/images/resources/instagram/scentsation3.jpg" alt="">
+                                <img src="assets/images/resources/instagram/machine2.png" alt="">
                                 
                     </div>
                     <!--Instagram Single End-->

@@ -155,7 +155,7 @@
                                         <textarea name="message" placeholder="Write a Message"></textarea>
                                     </div>
                                     <div class="contact-page__btn-box">
-                                        <button type="submit" class="thm-btn contact-page__btn">Send a message</button>
+                                        <button type="submit" class="thm-btn main-slider-three__btn">Send a message</button>
                                     </div>
                                 </div>
                             </form>

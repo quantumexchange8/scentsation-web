@@ -115,48 +115,48 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <!--Three POints Start-->
-    <section class="three-points">
-        <div class="container">
-            <div class="three-points__wrap">
-                <div class="three-points__inner">
-                    <div class="three-points__shape-1 float-bob-y">
-                        <img src="assets/images/shapes/three-points-shape-1.png" alt="">
+        <!--Three POints Start-->
+        <section class="three-points">
+            <div class="container">
+                <div class="three-points__wrap">
+                    <div class="three-points__inner">
+                        <div class="three-points__shape-1 float-bob-y">
+                            <img src="assets/images/shapes/three-points-shape-1.png" alt="">
+                        </div>
+                        <ul class="three-points__list list-unstyled">
+                            <li>
+                                <div class="three-points__icon">
+                                    <span class="fa fa-check"></span>
+                                </div>
+                                <div class="three-points__content">
+                                    <h3 class="three-points__title">Quality</h3>
+                                    <p class="three-points__text"> Only the best fragrances from top brands.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="three-points__icon">
+                                    <span class="fa fa-check"></span>
+                                </div>
+                                <div class="three-points__content">
+                                    <h3 class="three-points__title">Convenience</h3>
+                                    <p class="three-points__text">Fragrance made accessible anywhere, anytime.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="three-points__icon">
+                                    <span class="fa fa-check"></span>
+                                </div>
+                                <div class="three-points__content">
+                                    <h3 class="three-points__title">Sustainability</h3>
+                                    <p class="three-points__text">Reducing waste through eco-friendly practices.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="three-points__list list-unstyled">
-                        <li>
-                            <div class="three-points__icon">
-                                <span class="fa fa-check"></span>
-                            </div>
-                            <div class="three-points__content">
-                                <h3 class="three-points__title">Quality</h3>
-                                <p class="three-points__text"> Only the best fragrances from top brands.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="three-points__icon">
-                                <span class="fa fa-check"></span>
-                            </div>
-                            <div class="three-points__content">
-                                <h3 class="three-points__title">Convenience</h3>
-                                <p class="three-points__text">Fragrance made accessible anywhere, anytime.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="three-points__icon">
-                                <span class="fa fa-check"></span>
-                            </div>
-                            <div class="three-points__content">
-                                <h3 class="three-points__title">Sustainability</h3>
-                                <p class="three-points__text">Reducing waste through eco-friendly practices.</p>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     <!--Three Points End-->
     <!--Core Values End-->

@@ -22,9 +22,7 @@
 
                 <div class="swiper-slide">
                     <div class="image-layer-three"
-                        {{-- style="background-image: url(assets/images/backgrounds/main-slider-3-1.jpg);"></div> --}}
                         style="background-image: url(assets/images/logo/scentsation3.jpg);"></div>
-
                     <!-- /.image-layer -->
 
                     <div class="container">
@@ -33,10 +31,6 @@
                                 <div class="main-slider-three__content">
                                     <p class="main-slider-three__title">Refresh Your Nightlife Experience</p>
                                     <p class="main-slider-three__sub-title">On-demand access to premium fragrances, perfect for a night out. Scentsation brings luxury pay-per-spray fragrance solutions to nightlife venues worldwide.</p>
-                                    <div class="main-slider-three__btn-box">
-                                        <a href="/about" class="thm-btn main-slider-three__btn">Discover
-                                            more</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -70,8 +64,10 @@
                             <span class="section-title__tagline">Our Introduction</span>
                             <h2 class="section-title__title">We’re Revolutionizing The Fragrance Experience</h2>
                         </div>
-                        <p class="our-intro__text">Our innovative vending machines allow patrons instant access to top-tier fragrances on a pay-per-spray basis, giving them a fresh, luxurious experience whenever they want.</p>
-
+                        <p class="our-intro__text">Our innovative vending machines allow patrons instant access to top-tier fragrances on a pay-per-spray basis, giving them a fresh, luxurious experience whenever they want.</p>  
+                    </div>
+                    <div class="main-slider-three__btn-box">
+                        <a href="/about" class="thm-btn main-slider-three__btn">Discover More</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +141,7 @@
                     </div>
                 </div>
                 <div class="services-three__btn-box">
-                    <a href="/contact" class="services-three__btn thm-btn">Find a Scentsation Location</a>
+                    <a href="/contact" class="main-slider-three__btn thm-btn">Find a Scentsation Location</a>
                 </div>
             </div>
         </div>
@@ -174,8 +170,7 @@
                                 <div class="process-one__count"></div>
                             </div>
                             <h3 class="process-one__title">Locate</h3>
-                            <p class="process-one__text">Locate a Scentsation machine in your venue.
-                            </p>
+                            <p class="process-one__text">Locate a Scentsation machine in your venue.</p>
                         </div>
                     </div>
                     <!--Process One Single End-->
@@ -223,12 +218,12 @@
                     <div class="spa-special__left">
                         <div class="section-title text-left">
                             <span class="section-title__tagline">For Venue Partner</span>
-                            <h2 class="section-title__title">We work with venues to create an elevated patron experience.</h2>
+                            <h2 class="section-title__title">We work with venues to create an elevated patron experience</h2>
                         </div>
                         <p class="spa-special__text">Our machines increase customer satisfaction, provide a passive income stream, and come with built-in digital advertising to enhance the ambiance. All installation, maintenance, and refill services are handled by our team, making it a seamless addition for your venue.</p>
                     </div>
                     <div class="partner__btn-box">
-                        <a href="/partner" class="services-three__btn thm-btn">Learn More</a>
+                        <a href="/partner" class="main-slider-three__btn thm-btn">Learn More</a>
                     </div>
                 </div>
                 <div class="col-xl-4">

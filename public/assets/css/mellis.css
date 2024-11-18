@@ -23,17 +23,18 @@
   --mellis-font-three: 'Parisienne', cursive;
   --mellis-white: #ffffff;
   --mellis-white-rgb: 255, 255, 255;
-  --mellis-base: #cabe7a;
+  --mellis-base:#e1c535;
   --mellis-base-rgb: 205, 190, 165 ;
   --mellis-black: #27252a;
   --mellis-black-rgb: 39, 37, 42;
-  --mellis-extra: #f8f6ef;
+  --mellis-extra: #383838;
   --mellis-extra-rgb: 252, 245, 245;
-  --mellis-gray: #89868d;
+  --mellis-gray: #b2aeb7;
   --mellis-gray-rgb: 137, 134, 141;
   --mellis-bdr-color: #f0e8e8;
   --mellis-bdr-color-rgb: 240, 232, 232;
-  --mellis-letter-spacing: 0.1em
+  --mellis-letter-spacing: 0.1em;
+  --mellis-background:#1c1c1c;
 }
 
 .row {
@@ -46,6 +47,7 @@
 
 body {
   font-family: var(--mellis-font);
+  /* color: var(--mellis-gray); */
   color: var(--mellis-gray);
   font-size: 16px;
   line-height: 30px;
@@ -213,13 +215,16 @@ ul {
 
 .section-title__title {
   margin: 0;
-  color: var(--mellis-black);
+  color: var(--mellis-white);
   font-size: 44px;
   line-height: 49px;
   margin-top: 5px;
+  -webkit-animation: glow-title 1s ease-in-out infinite alternate;
+  -moz-animation: glow-title 1s ease-in-out infinite alternate;
+  animation: glow-title 1s ease-in-out infinite alternate;
 }
 
-.thm-btn {
+/* .thm-btn {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -237,8 +242,11 @@ ul {
   overflow: hidden;
   letter-spacing: 0.2em;
   z-index: 1;
-}
-
+  -webkit-animation: glow-title 1s ease-in-out infinite alternate;
+  -moz-animation: glow-title 1s ease-in-out infinite alternate;
+  animation: glow-title 1s ease-in-out infinite alternate;
+} */
+/* 
 .thm-btn:before {
   position: absolute;
   top: 0;
@@ -251,16 +259,56 @@ ul {
   transform: translateY(100%);
   transition: all 500ms ease;
   z-index: -1;
+} */
+
+/* .thm-btn:hover:before {
+  transform: translateY(0);
+  width: 100%;
+} */
+
+/* .thm-btn:hover {
+  color: var(--mellis-white);
+  z-index: 1;
+} */
+
+.thm-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--mellis-white);
+  border: 1px solid var(--mellis-base);
+  border-radius: 10px; /* Matches the button's border-radius */
+  background: transparent;
+  font-family: var(--mellis-font-two);
+  z-index: 1;
+  overflow: hidden;
+  transition: color 500ms ease, box-shadow 500ms ease; /* Smooth transition for glow */
+  box-shadow: 0 0 10px rgba(234, 216, 114, 0.926); /* Subtle initial glow */  
+}
+
+.thm-btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: var(--mellis-black);
+  border-radius: 10px; /* Rounded corners for the button */
+  width: 0%;
+  transform: translateY(100%);
+  transition: all 500ms ease;
+  z-index: -1;
+}
+
+.thm-btn:hover {
+  color: var(--mellis-black);
 }
 
 .thm-btn:hover:before {
   transform: translateY(0);
   width: 100%;
-}
-
-.thm-btn:hover {
-  color: var(--mellis-white);
-  z-index: 1;
 }
 
 .thm-btn-two {
@@ -2335,10 +2383,12 @@ ul {
 .main-slider-three__sub-title {
   font-size: 20px;
   color: var(--mellis-white);
-  font-weight: 600;
-  line-height: 30px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+  font-weight: 50;
+  line-height: 35px;
+  font-family: var(--mellis-font-two);
+  /* text-transform: uppercase; */
+  letter-spacing: 0.01em;
+  margin-top: 100px;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-120px);
@@ -2359,7 +2409,7 @@ ul {
   line-height: 130px;
   font-family: var(--mellis-font-three);
   margin-top: 33px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-120px);
@@ -2376,6 +2426,7 @@ ul {
 }
 
 .main-slider-three__btn-box {
+  padding-top: 50px;
   position: relative;
   display: block;
   opacity: 0;
@@ -2388,6 +2439,7 @@ ul {
   transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
   transition: transform 2000ms ease, opacity 2000ms ease;
   transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+
 }
 @-webkit-keyframes glow {
   from {
@@ -2397,12 +2449,13 @@ ul {
     text-shadow: 0 0 20px #fff, 0 0 30px #e2b52e, 0 0 40px #e2b52e, 0 0 50px #e2b52e, 0 0 60px #e2b52e, 0 0 70px #e2b52e, 0 0 80px #e2b52e;
   }
 }
+
 .main-slider-three__btn:hover {
   color: var(--mellis-base);
 }
 
 .main-slider-three__btn:before {
-  background-color: var(--mellis-white);
+  background-color: #ffffff27;
 }
 
 .main-slider-three .swiper-slide-active .main-slider-three__title,
@@ -2412,6 +2465,15 @@ ul {
   opacity: 1;
   -webkit-transform: translateY(0) translateX(0);
   transform: translateY(0) translateX(0);
+}
+
+.main-slider-three__btn-box {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0) translateX(0);
+  transform: translateY(0) translateX(0);
+  text-align: center;
+
 }
 
 .main-slider-three #main-slider-pagination {
@@ -2426,6 +2488,7 @@ ul {
   display: block;
   padding: 190px 0 190px;
   z-index: 1;
+  background-color: var(--mellis-background);
 }
 
 .welcome-one__left {
@@ -3048,7 +3111,7 @@ ul {
   bottom: -8px;
   border: 2px solid var(--mellis-base);
   border-radius: 50%;
-  background-color: var(--mellis-white);
+  background-color: #44423d;
 }
 
 .process-one__count {
@@ -3120,10 +3183,14 @@ ul {
 }
 
 .process-one__title {
+  color: var(--mellis-black);
   font-size: 24px;
   line-height: 30px;
   margin-top: 34px;
   margin-bottom: 13px;
+  -webkit-animation: glow-text 1s ease-in-out infinite alternate;
+  -moz-animation: glow-text 1s ease-in-out infinite alternate;
+  animation: glow-text 1s ease-in-out infinite alternate;
 }
 
 .process-one__title a {
@@ -3954,6 +4021,9 @@ ul {
   font-size: 18px;
   color: var(--mellis-white);
   line-height: 18px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .footer-widget__links-list {
@@ -4168,6 +4238,8 @@ ul {
   position: relative;
   display: block;
   padding: 120px 0 120px;
+  background-color: var(--mellis-extra);
+
 }
 
 .about-one__left {
@@ -4246,6 +4318,8 @@ ul {
   align-items: center;
   font-size: 16px;
   margin-bottom: 6px;
+  color: var(--mellis-white);
+
 }
 
 .about-one__points li h4 span {
@@ -4408,7 +4482,7 @@ ul {
 .feature-one__single-two {
   position: relative;
   display: block;
-  background-color: var(--mellis-base);
+  background-color: #f5db9a38;
   text-align: center;
   padding: 55px 55px 46px;
   margin-bottom: 30px;
@@ -5536,6 +5610,7 @@ ul {
   padding: 120px 0 120px;
   overflow: hidden;
   z-index: 1;
+  background-color: var(--mellis-background);
 }
 
 .our-intro__shape-1 {
@@ -5783,6 +5858,8 @@ ul {
   display: block;
   padding: 120px 0 120px;
   z-index: 1;
+  background-color: var(--mellis-background);
+
 }
 
 .services-three::before {
@@ -5821,14 +5898,16 @@ ul {
 .services-three__single {
   position: relative;
   display: block;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+  background-color: #292826;
+  box-shadow: 0px 10px 60px 0px rgba(150, 139, 139, 0.07);
   padding: 49px 49px 44px;
   border: 1px solid transparent;
   margin-bottom: 20px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   height: 300px; /* Adjust this value as needed */
+  transition: color 100ms ease, box-shadow 500ms ease; /* Smooth transition for glow */
+  box-shadow: 0 0 5px rgba(188, 160, 4, 10); /* Subtle initial glow */ 
 }
 
 .services-three__single:hover {
@@ -5855,6 +5934,7 @@ ul {
 .services-three__icon {
   position: relative;
   display: inline-block;
+  
 }
 
 .services-three__icon span {
@@ -5877,10 +5957,11 @@ ul {
   line-height: 30px;
   margin-top: 7px;
   margin-bottom: 21px;
+  
 }
 
 .services-three__title a {
-  color: var(--mellis-black);
+  color: var(--mellis-white);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -6211,7 +6292,7 @@ ul {
   position: relative;
   display: block;
   background-color: var(--mellis-black);
-  padding: 120px 0 180px;
+  padding: 120px 0 100px;
   z-index: 1;
 }
 
@@ -6240,6 +6321,9 @@ ul {
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 40px;
+  -webkit-animation: glow-title 1s ease-in-out infinite alternate;
+  -moz-animation: glow-title 1s ease-in-out infinite alternate;
+  animation: glow-title 1s ease-in-out infinite alternate;
 }
 
 .spa-center-two__title {
@@ -6262,14 +6346,15 @@ ul {
 .three-points {
   position: relative;
   display: block;
-  margin-top: -60px;
+  /* background-color: var(--mellis-background); */
+  margin-top: 100px;
   z-index: 2;
 }
-
+ 
 .three-points__wrap {
   position: relative;
   display: block;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--mellis-extra);
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
 }
 
@@ -6338,6 +6423,7 @@ ul {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 20px;
+  color: var(--mellis-white);
 }
 
 /*--------------------------------------------------------------
@@ -6529,6 +6615,8 @@ ul {
 .instagram-two {
   position: relative;
   display: block;
+  background-color: var(--mellis-background);
+
 }
 
 .instagram-two__bottom {
@@ -6768,6 +6856,8 @@ ul {
   display: block;
   padding-bottom: 120px;
   z-index: 1;
+  background-color: var(--mellis-extra);
+
 }
 
 .contact-page__left {
@@ -6804,7 +6894,7 @@ ul {
   justify-content: center;
   text-align: center;
   color: var(--mellis-black);
-  background-color: var(--mellis-extra);
+  background-color: var(--mellis-white);
   font-size: 15px;
   border-radius: 50%;
   overflow: hidden;
@@ -6885,7 +6975,7 @@ ul {
   height: 58px;
   width: 100%;
   border: none;
-  background-color: var(--mellis-extra);
+  background-color: rgba(255, 255, 255, 0.1);
   padding-left: 30px;
   padding-right: 30px;
   outline: none;
@@ -6899,7 +6989,7 @@ ul {
   color: var(--mellis-gray);
   height: 168px;
   width: 100%;
-  background-color: var(--mellis-extra);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 21px 30px 30px;
   border: none;
   outline: none;
@@ -7489,13 +7579,15 @@ ul {
   display: block;
   padding: 120px 0 90px;
   z-index: 1;
+  background-color: var(--mellis-background);
+
 }
 
 .pricing-plan__single {
   position: relative;
   display: block;
-  border: 1px solid var(--mellis-bdr-color);
-  background-color: var(--mellis-white);
+  /* border: 1px solid var(--mellis-bdr-color); */
+  background-color: var(--mellis-extra);
   margin-bottom: 30px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -7512,13 +7604,14 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 60px 30px;
-  border-bottom: 1px solid var(--mellis-bdr-color);
+  padding: 30px 60px 20px;
+  border-bottom: 10px solid var(--mellis-black);
 }
 
 .pricing-plan__title {
   font-size: 24px;
   line-height: 29px;
+  color: var(--mellis-white);
 }
 
 .pricing-plan__icon {
@@ -7597,6 +7690,8 @@ ul {
   display: block;
   padding: 120px 0 120px;
   z-index: 2;
+  background-color: var(--mellis-background);
+
 }
 
 .spa-special__left {
@@ -8042,6 +8137,7 @@ ul {
   background-size: cover;
   mix-blend-mode: luminosity;
   z-index: -1;
+  background-color: var(--mellis-background);
 }
 
 /*--------------------------------------------------------------
@@ -8948,7 +9044,7 @@ ul {
 }
 
 .product-details__buttons-1 .thm-btn {
-  background-color: var(--mellis-black);
+  background-color: var(--mellis-white);
 }
 
 .product-details__buttons-1 .thm-btn:before {
@@ -9256,12 +9352,12 @@ ul {
 
 .icon {
   display: inline-block;
-  width: 80px;
+  width: 70px;
   height: 80px;
   stroke-width: 0;
-  stroke: #cabe7a;
-  fill: #cabe7a;
-  color: #cabe7a;   /* Apply color to fill */
+  stroke: var(--mellis-base);
+  fill: var(--mellis-base);
+  color: var(--mellis-base);   /* Apply color to fill */
 }
 .partner__center {
   position: relative;
@@ -9287,6 +9383,32 @@ ul {
   font-weight: bold;
 }
 
+@-webkit-keyframes glow-title {
+  from {
+    text-shadow: 0 0 10px #000000, 0 0 20px #fff, 0 0 30px #ebac19;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #e2b52e, 0 0 40px #e2b52e;
+  }
+}
+
+@-webkit-keyframes glow-text {
+  from {
+    text-shadow: 0 0 10px #f6eeee, 0 0 20px #fff, 0 0 30px #ebac19;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #f7efd7, 0 0 40px #f7efd7;
+  }
+}
+
+@-webkit-keyframes glow-button {
+  from {
+    text-shadow: 0 0 10px #000000, 0 0 20px #fff, 0 0 30px #ebac19;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #e2b52e, 0 0 40px #e2b52e;
+  }
+}
 
 /*--------------------------------------------------------------
 # Boxed Version

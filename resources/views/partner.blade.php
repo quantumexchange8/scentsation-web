@@ -92,7 +92,7 @@
                 <div class="col-xl-12">
                     <div class="partner__center">
                         <div class="about-one__btn-call-box">
-                            <a href="/contact" class="about-one__btn thm-btn">Become a Partner</a>
+                            <a href="/contact" class="main-slider-three__btn thm-btn">Become a Partner</a>
                             {{-- <div class="about-one__call-box">
                                 <div class="about-one__call-icon">
                                     <span class="icon-telephone"></span>

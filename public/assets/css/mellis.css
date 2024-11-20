@@ -2472,7 +2472,7 @@ ul {
   opacity: 1;
   -webkit-transform: translateY(0) translateX(0);
   transform: translateY(0) translateX(0);
-  text-align: center;
+  /* text-align: center; */
 
 }
 
@@ -7002,6 +7002,7 @@ ul {
 .contact-page__btn-box {
   position: relative;
   display: block;
+  text-align: right;
 }
 
 .contact-page__btn {
@@ -9410,6 +9411,15 @@ ul {
   }
 }
 
+/*--------------------------------------------------------------
+# Recaptcha
+--------------------------------------------------------------*/
+.grecaptcha-badge {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+  z-index: 9999; /* Ensure it's on top */
+}
 /*--------------------------------------------------------------
 # Boxed Version
 --------------------------------------------------------------*/

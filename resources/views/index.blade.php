@@ -65,10 +65,11 @@
                             <h2 class="section-title__title">We’re Revolutionizing The Fragrance Experience</h2>
                         </div>
                         <p class="our-intro__text">Our innovative vending machines allow patrons instant access to top-tier fragrances on a pay-per-spray basis, giving them a fresh, luxurious experience whenever they want.</p>  
+                        <div class="main-slider-three__btn-box">
+                            <a href="/about" class="thm-btn main-slider-three__btn">Discover More</a>
+                        </div>
                     </div>
-                    <div class="main-slider-three__btn-box">
-                        <a href="/about" class="thm-btn main-slider-three__btn">Discover More</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>

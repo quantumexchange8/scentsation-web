@@ -154,6 +154,9 @@
                                     <div class="contact-page__form-input-box text-message-box">
                                         <textarea name="message" placeholder="Write a Message"></textarea>
                                     </div>
+                                    
+                                    <input type="hidden" id="recaptcha_token" name="recaptcha_token">
+
                                     <div class="contact-page__btn-box">
                                         <button type="submit" class="thm-btn main-slider-three__btn">Send a message</button>
                                     </div>
@@ -236,6 +239,14 @@
 @endsection
 
 @section('scripts')
+<script src="https://www.google.com/recaptcha/api.js?render={{env('RECAPTCHA_SITE_KEY')}}"></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('{{env('RECAPTCHA_SITE_KEY')}}').then(function(token) {
+            document.getElementById('recaptcha_token').value = token;
+        });
+    });
+</script>
 <script>
     $(document).ready(function() {
         $('.contact-page__form').on('submit', function(e) {
